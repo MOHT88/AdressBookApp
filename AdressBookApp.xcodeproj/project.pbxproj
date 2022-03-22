@@ -12,6 +12,7 @@
 		5846A2BF27EA1B3600409E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5846A2BD27EA1B3600409E3A /* Main.storyboard */; };
 		5846A2C127EA1B3800409E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5846A2C027EA1B3800409E3A /* Assets.xcassets */; };
 		5846A2C427EA1B3800409E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5846A2C227EA1B3800409E3A /* LaunchScreen.storyboard */; };
+		585795CF27EA44FC0021EFF7 /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585795CE27EA44FC0021EFF7 /* ContactInfoViewController.swift */; };
 		589A50AB27EA3EF500C4155D /* FullNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A50AA27EA3EF400C4155D /* FullNameViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		5846A2C027EA1B3800409E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5846A2C327EA1B3800409E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5846A2C527EA1B3800409E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585795CE27EA44FC0021EFF7 /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
 		589A50AA27EA3EF400C4155D /* FullNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,15 +58,56 @@
 		5846A2B627EA1B3600409E3A /* AdressBookApp */ = {
 			isa = PBXGroup;
 			children = (
-				5846A2B727EA1B3600409E3A /* AppDelegate.swift */,
-				5846A2B927EA1B3600409E3A /* SceneDelegate.swift */,
-				589A50AA27EA3EF400C4155D /* FullNameViewController.swift */,
-				5846A2BD27EA1B3600409E3A /* Main.storyboard */,
-				5846A2C027EA1B3800409E3A /* Assets.xcassets */,
-				5846A2C227EA1B3800409E3A /* LaunchScreen.storyboard */,
-				5846A2C527EA1B3800409E3A /* Info.plist */,
+				585795D127EA45890021EFF7 /* Models */,
+				585795D027EA45420021EFF7 /* ViewControllers */,
+				585795D227EA45A20021EFF7 /* Storyboards */,
+				585795D327EA45BE0021EFF7 /* Resources */,
+				585795D427EA45E60021EFF7 /* Apps */,
 			);
 			path = AdressBookApp;
+			sourceTree = "<group>";
+		};
+		585795D027EA45420021EFF7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				589A50AA27EA3EF400C4155D /* FullNameViewController.swift */,
+				585795CE27EA44FC0021EFF7 /* ContactInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		585795D127EA45890021EFF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		585795D227EA45A20021EFF7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5846A2BD27EA1B3600409E3A /* Main.storyboard */,
+				5846A2C227EA1B3800409E3A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		585795D327EA45BE0021EFF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5846A2C027EA1B3800409E3A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		585795D427EA45E60021EFF7 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				5846A2B927EA1B3600409E3A /* SceneDelegate.swift */,
+				5846A2B727EA1B3600409E3A /* AppDelegate.swift */,
+				5846A2C527EA1B3800409E3A /* Info.plist */,
+			);
+			path = Apps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5846A2B827EA1B3600409E3A /* AppDelegate.swift in Sources */,
+				585795CF27EA44FC0021EFF7 /* ContactInfoViewController.swift in Sources */,
 				5846A2BA27EA1B3600409E3A /* SceneDelegate.swift in Sources */,
 				589A50AB27EA3EF500C4155D /* FullNameViewController.swift in Sources */,
 			);
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G9KP9J4ZYQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AdressBookApp/Info.plist;
+				INFOPLIST_FILE = AdressBookApp/Apps/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G9KP9J4ZYQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AdressBookApp/Info.plist;
+				INFOPLIST_FILE = AdressBookApp/Apps/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
